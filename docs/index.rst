@@ -25,8 +25,8 @@ Spark和Hadoop都是主流的大数据处理平台，
 将Ceph与Spark结合的初衷是为了解决数据孤岛问题。通常，每个单独的分析群集通常都有自己的非共享HDFS数据存储，为了提供跨孤岛的相同数据集的访问，数据平台团队经常在HDFS孤岛之间复制数据集，
 试图使它们保持一致和最新，这样做的结果就是公司最终维护了许多独立的固定分析集群，成本高昂。AWS生态系统通过Hadoop S3A文件系统客户端\
 提供了对象存储方案，Spark和Hadoop都可以直接面向共享S3对象存储中的数据进行查询或提交任务，Ceph是排名第一的开源私有云对象存储平台，提供与S3兼容的对象存储，\
-自然成为首选方案。详情请参考
-\ https://www.redhat.com/en/blog/why-spark-ceph-part-1-3\，\ https://www.redhat.com/en/blog/why-spark-ceph-part-2-3\，\ https://www.redhat.com/en/blog/why-spark-ceph-part-3-3\
+自然成为首选方案。详情请参考\ `why-spark-ceph-part-1-3 <https://www.redhat.com/en/blog/why-spark-ceph-part-1-3>`_
+\ `why-spark-ceph-part-2-3 <https://www.redhat.com/en/blog/why-spark-ceph-part-2-3>`_，\ `why-spark-ceph-part-3-3 <https://www.redhat.com/en/blog/why-spark-ceph-part-3-3>`_。
 
 2. Spark On Ceph： How?
 ==============================
